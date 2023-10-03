@@ -22,7 +22,7 @@ app.listen(3006, () => {
 });
 
 const db = mysql.createConnection({
-  host: "sql12.freesqldatabase.com	",
+  host: "sql12.freesqldatabase.com",
   user: "sql12650583",
   password: "MIwKKAUnT7",
   database: "sql12650583",

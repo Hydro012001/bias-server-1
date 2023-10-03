@@ -37,7 +37,6 @@ app.get("/admin/listofuser", (req, res) => {
     if (error) {
       return res.send({ status: false, message: error });
     } else {
-      return res.send(result);
       return res.send({ status: true, result });
     }
   });

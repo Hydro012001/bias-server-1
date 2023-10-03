@@ -35,8 +35,9 @@ app.get("/", (req, res) => {
 app.get("/admin/listofuser", (req, res) => {
   db.query("select * from usertbl", (error, result) => {
     if (error) {
-      return res.send({ status: false, message: error.message });
+      return res.send({ status: false, message: error });
     } else {
+      return res.send(result);
       return res.send({ status: true, result });
     }
   });

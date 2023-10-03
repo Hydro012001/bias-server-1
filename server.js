@@ -170,7 +170,7 @@ app.get(
   []
 );
 
-server.listen(3006, () => {
+server.listen(3005, () => {
   console.log("Server socket running");
 });
 

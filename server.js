@@ -8,7 +8,7 @@ const MySQLEvents = require("@rodrigogs/mysql-events");
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://bias-server-1.onrender.com/",
+    origin: "http://192.168.56.1:3000",
     methods: ["GET", "POST"],
   },
 });
